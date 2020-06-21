@@ -1,0 +1,92 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>295</LabelID>
+    <LabelName>全站底部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>竹海专用</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div class="footer"&gt;
+&lt;div class="container"&gt;
+&lt;div class="footer_t"&gt;&lt;a href=""&gt;+关于竹海农业&lt;/a&gt;&lt;/div&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer_list"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(23)/}"&gt;-竹海简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(60)/}"&gt;-发展历程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(64)/}"&gt;-产业生态圈&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(61)/}"&gt;-企业文化&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(58)/}"&gt;-品牌形象&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="{ZL:GetInfoUrl(59)/}"&gt;-法律声明&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer_list"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(70)/}"&gt;-生态修复&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(71)/}"&gt;-生态光能&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(72)/}"&gt;-生态旅游&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/guest/"&gt;-留言&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(5)/}"&gt;-友情链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(19)/}"&gt;-招贤纳士&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer_list"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(65)/}"&gt;-领导关怀&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(66)/}"&gt;-绿土地&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(67)/}"&gt;-绿能源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(68)/}"&gt;-绿金融&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(69)/}"&gt;-产业布局&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer_list"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(63)/}"&gt;产品理念&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(62)/}"&gt;质量保证&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(24)/}"&gt;购买渠道&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(25)/}"&gt;联系公司&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="footer_bottom  paddingbot"&gt;
+&lt;div class="container"&gt;{$Copyright/}&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="navbar-fixed-bottom home_jidi"&gt;
+&lt;div class="container"&gt;
+&lt;a&gt;基地展示：&lt;/a&gt;
+&lt;a href="{ZL:GetInfoUrl(52)/}" class="btn btn-sm btn-success"&gt;&lt;span class="glyphicon glyphicon-star"&gt;&lt;/span&gt;万年基地&lt;/a&gt;
+&lt;a href="{ZL:GetInfoUrl(53)/}" class="btn btn-sm btn-success"&gt;&lt;span class="glyphicon glyphicon-leaf"&gt;&lt;/span&gt;太阳基地&lt;/a&gt;
+&lt;a href="{ZL:GetInfoUrl(54)/}" class="btn btn-sm btn-success"&gt;&lt;span class="glyphicon glyphicon-tree-conifer"&gt;&lt;/span&gt;丰城基地&lt;/a&gt;
+&lt;a href="{ZL:GetInfoUrl(55)/}" class="btn btn-sm btn-success"&gt;&lt;span class="glyphicon glyphicon-grain"&gt;&lt;/span&gt;牛场基地&lt;/a&gt;
+&lt;a href="{ZL:GetInfoUrl(56)/}" class="btn btn-sm btn-success"&gt;&lt;span class="glyphicon glyphicon glyphicon-cd"&gt;&lt;/span&gt;杨桥基地&lt;/a&gt;
+&lt;a href="{ZL:GetInfoUrl(57)/}" class="btn btn-sm btn-success"&gt;&lt;span class="glyphicon glyphicon glyphicon-tree-deciduous"&gt;&lt;/span&gt;丁家基地&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

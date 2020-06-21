@@ -1,0 +1,87 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+
+</head>
+<body style="padding-bottom:50px;">
+{ZL.Label id="全站头部"/} 
+<div class="del_banner">
+<h1>厚道 共赢 领导力 为客户创造更多绿色服务</h1>
+</div>
+<div class="container">
+<div class="mysite">
+<ul class="breadcrumb" >
+<li><a href="/">首页</a><span class="divider"></span></li>
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" ShowNum="30" /}
+<li class="active">栏目列表</li>
+</ul>
+</div>
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+
+<div class="list_l">
+<ul>
+<li><a href="{ZL:GetNodeLinkUrl(2)/}">产品与服务</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(3)/}">新闻活动</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(12)/}">创新科技</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(13)/}">可持续发展</a></li>
+</ul>
+</div>
+
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+{ZL.Label id="输出图文简介列表" ShowNum="3" NodeID="13" SysNum="200" TitleNum="30" /}
+</div>
+</div>
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('home_nav'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+     if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+    IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+ //]]>
+
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement("style");
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      "@-ms-viewport{width:auto!important}"
+    )
+  );
+  document.getElementsByTagName("head")[0].
+    appendChild(msViewportStyle);
+}
+
+$(".bottom-close").click(function(){
+	$(".bottom-contrainer").addClass("bottom-hide");
+	$(".bottom-collspan").removeClass("collspan-hide");
+})
+$(".collspan").click(function(){
+	$(".bottom-contrainer").removeClass("bottom-hide");
+	$(".bottom-collspan").addClass("collspan-hide");	
+})
+$().ready(function(e) {
+    $("#menu{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}").addClass("active");
+});
+</script>

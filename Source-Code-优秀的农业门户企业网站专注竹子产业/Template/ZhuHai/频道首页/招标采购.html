@@ -1,0 +1,99 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+</head>
+<body>
+{ZL.Label id="全站头部"/} 
+<div class="zhao_banner">
+<p>欢迎您加入竹海农业供应商体系<br><span>合作共建繁荣，诚信同享硕果</span></p>
+</div>
+<div class="news_body">
+<div class="container">
+<div class="mysite">
+<ul class="breadcrumb" >
+<li><a href="/">首页</a><span class="divider"></span></li>
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" ShowNum="30" /}
+<li class="active">栏目列表</li>
+</ul>
+</div>
+<div class="row">
+<div class="padding5">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding10">
+<div class="news_list">
+<div class="news_list_t"><h2>招标原则</h2><div class="clearfix"></div></div>
+<div class="news_list_l">
+<ul>
+<li>1. 公开原则</li>
+<li>2. 公平原则</li>
+<li>3. 公正原则</li>
+<li>4. 诚实信用原则</li>
+</ul>
+</div>
+</div><!--栏目列表-->
+<div class="news_list">
+<div class="news_list_t"><h2>廉洁守则</h2><div class="clearfix"></div></div>
+<div class="news_list_l">
+<ul>
+<li>1. 三观正，树正气</li>
+<li>2. 遵纪守法，严于律己</li>
+<li>3. 认真执行有关机关管理和财务制度的规定</li>
+<li>4. 认真贯彻中央关于党政机关和党政干部不准经商办企业的规定</li>
+<li>5. 自觉接受监督，防止滥用权力</li>
+<li>6. 管好配偶，子女和身边工作人员。</li>
+</ul>
+</div>
+</div><!--栏目列表-->
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 padding10">
+{ZL.Label id="循环显示父栏目下信息列表_无文章不显示" ParentID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" TitleNum="60" ShowNum="6" /}
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('home_nav'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+     if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+    IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+ //]]>
+
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement("style");
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      "@-ms-viewport{width:auto!important}"
+    )
+  );
+  document.getElementsByTagName("head")[0].
+    appendChild(msViewportStyle);
+}
+
+
+$().ready(function(e) {
+    $("#menu{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}").addClass("active");
+});
+</script>

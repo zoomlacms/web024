@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{$SiteName/}_首页</title>
+{$MetaKeywords/}
+{$MetaDescription/}
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?v={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="relative">
+<nav class="navbar navbar-default home_nav" id="home_nav">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand home_logo" href="/"><embed pluginspage="http://www.adobe.com/svg/viewer/install/" src="{$LogoUrl/}" type="image/svg+xml" /></a>
+
+</div>
+<div class="home_top_list">
+<ul>
+<li><a href="#">中国领先竹材科研企业</a> </li>    
+<li><a href="#">江西省重点扶持农业创新合作社</a></li>    
+<li><a href="#">九个一农业扶贫示范工程</a></li>
+</ul> 
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav home_list">
+<li class="active"><a href="/">首页</a></li>
+<li id="menu4"><a href="{ZL:GetNodeLinkUrl(4)/}">了解我们</a></li>
+<li id="menu2"><a href="{ZL:GetNodeLinkUrl(2)/}">产品与服务</a></li>
+<li id="menu3"><a href="{ZL:GetNodeLinkUrl(3)/}">新闻活动</a></li>
+<li id="menu12"><a href="{ZL:GetNodeLinkUrl(12)/}">创新科技</a></li>
+<li id="menu13"><a href="{ZL:GetNodeLinkUrl(13)/}">可持续发展</a></li>
+<li id="menu16"><a href="{ZL:GetNodeLinkUrl(16)/}">招标采购</a></li>
+</ul>
+<form class="navbar-form " role="search" action="/Search/SearchList.aspx" method="get" target="_blank">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="全站检索">
+</div>
+<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+</form>
+</div>
+<!-- /.navbar-collapse -->
+</div>
+
+<!-- /.container-fluid -->
+</nav>
+</div>
+
+
+<div id="carousel-example-generic" class="carousel slide home_banner" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+</ol>
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+<div class="item active banner1">
+<span>做中国竹产业的领头羊</span>
+</div>
+<div class="item banner2">
+<span>做国内最先进的现代农业合作社</span>
+</div>
+<div class="item banner3">
+<span>打造中国最优秀的竹产业品牌</span>
+</div>
+</div>
+
+<!-- Controls -->
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+
+<div class="home_link">
+<div class="container padding10">
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 home_link_list">
+<a href="{ZL:GetInfoUrl(81)/}"><img src="{$CssDir/}images/banner1.png" alt="雷竹种植产业链"></a>
+<a href="{ZL:GetInfoUrl(81)/}">雷竹种植产业链
+<p>Bamboo planting</p></a>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 home_link_list">
+<a href="{ZL:GetInfoUrl(82)/}"><img src="{$CssDir/}images/banner2.png" alt="现代农业合作社" /></a>
+<a href="{ZL:GetInfoUrl(82)/}">现代农业合作社
+<p>Agricultural cooperatives</p></a>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 home_link_list">
+<a href="{ZL:GetInfoUrl(83)/}"><img src="{$CssDir/}images/banner3.png" alt="现代农业合作社"></a>
+<a href="{ZL:GetInfoUrl(83)/}">环保与现代垦殖事业
+<p>environmental protection</p></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container home_news">
+<div class="row">
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12  home_news_l">
+<div class="home_new_l_t">
+<a href="{ZL:GetNodeLinkUrl(3)/}">更多新闻关注</a>
+新闻关注News
+</div>
+<img src="{$CssDir/}images/new.png" alt="新闻关注"/>
+<div class="home_new_l_c">
+<strong>凝聚发展|2016年竹海科技产业年会全面召开</strong>
+<p>在公司取得江西省重点农业发展企业的光环下，集团将在新的一年深入改革凝聚发展，并将在公司取得江西省重点农业发展企业的光环下，集团将在新的一年深入改革凝聚发展，并将在公司取得江西省重点农业发展企业的光环下，集团将在新的一年深入改革凝聚发展，并将，集团将在新的一年深入改革凝聚发展，并将在公司取得江西省重点农业发展企业的光环下，集团将在新的一年深入改革凝聚发展……</p>
+<ul>
+
+{ZL.Label id="输出指定节点标题_无时间属性[可选标题长度]" NodeID="3" TitleNum="80" ShowNum="6" /}
+</ul>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 home_news_r">
+<b>竹海风采</b>
+<a href="{ZL:GetInfoUrl(41)/}" title="团队风采"><img src="{$CssDir/}images/boss2.jpg" alt="" /></a>
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性[可选标题长度]" NodeID="15" TitleNum="40" ShowNum="10" /}
+</ul>
+</div>
+</div>
+</div>
+
+<div class="home_pic">
+<div class="container">
+<strong>产业布局 Industry Structure</strong>
+</div>
+<div class="home_pic_list">
+<div class="container padding10">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
+<a href="{ZL:GetInfoUrl(84)/}" title="雷种种植"><img src="{$CssDir/}images/img1.png" alt=""/></a>
+<a href="{ZL:GetInfoUrl(84)/}">雷竹种植</a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
+<a href="{ZL:GetInfoUrl(85)/}" title="竹深加工"><img src="{$CssDir/}images/img2.png" alt=""/></a>
+<a href="{ZL:GetInfoUrl(85)/}">竹深加工</a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
+<a href="{ZL:GetInfoUrl(86)/}" title="生态光能"><img src="{$CssDir/}images/img4.png" alt=""/></a>
+<a href="{ZL:GetInfoUrl(86)/}">生态光能</a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
+<a href="{ZL:GetInfoUrl(87)/}" title="生态牧业"><img src="{$CssDir/}images/img3.png" alt=""/></a>
+<a href="{ZL:GetInfoUrl(87)/}">生态牧业</a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
+<a href="{ZL:GetInfoUrl(88)/}" title="林间种养"><img src="{$CssDir/}images/img5.png" alt=""/></a>
+<a href="{ZL:GetInfoUrl(88)/}">林间种养</a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
+<a href="{ZL:GetInfoUrl(72)/}" title="生态旅游"><img src="{$CssDir/}images/img6.png" alt=""/></a>
+<a href="{ZL:GetInfoUrl(72)/}">生态旅游</a>
+</div>
+</div>
+</div>
+
+<a href="{ZL:GetNodeLinkUrl(20)/}">
+<div class="home_ad">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 col-md-offset-3">
+<h3>2015年会风采</h3>
+<p>发源红星-中国农垦发源地</p>
+</div>
+</div>
+</div>
+</div></a>
+<div class="home_randle">
+<div class="container">
+<img src="{$CssDir/}images/bag.png" alt="bag">
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer">
+<div class="container">
+<div class="footer_t"><a href="">+关于竹海农业</a></div>
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer_list">
+<ul>
+<li><a href="{ZL:GetInfoUrl(23)/}">-竹海简介</a></li>
+<li><a href="{ZL:GetInfoUrl(60)/}">-发展历程</a></li>
+<li><a href="{ZL:GetInfoUrl(64)/}">-产业生态圈</a></li>
+<li><a href="{ZL:GetInfoUrl(61)/}">-企业文化</a></li>
+<li><a href="{ZL:GetInfoUrl(58)/}">-品牌形象</a></li>
+<li><a href="{ZL:GetInfoUrl(59)/}">-法律声明</a></li>
+</ul>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer_list">
+<ul>
+<li><a href="{ZL:GetInfoUrl(70)/}">-生态修复</a></li>
+<li><a href="{ZL:GetInfoUrl(71)/}">-生态光能</a></li>
+<li><a href="{ZL:GetInfoUrl(72)/}">-生态旅游</a></li>
+<li><a href="/guest/">-留言</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(5)/}">-友情链接</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(19)/}">-招贤纳士</a></li>
+</ul>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer_list">
+<ul>
+<li><a href="{ZL:GetInfoUrl(65)/}">-领导关怀</a></li>
+<li><a href="{ZL:GetInfoUrl(66)/}">-绿土地</a></li>
+<li><a href="{ZL:GetInfoUrl(67)/}">-绿能源</a></li>
+<li><a href="{ZL:GetInfoUrl(68)/}">-绿金融</a></li>
+<li><a href="{ZL:GetInfoUrl(69)/}">-产业布局</a></li>
+
+</ul>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer_list">
+<ul>
+<li><a href="{ZL:GetInfoUrl(63)/}">产品理念</a></li>
+<li><a href="{ZL:GetInfoUrl(62)/}">质量保证</a></li>
+<li><a href="{ZL:GetInfoUrl(24)/}">购买渠道</a></li>
+<li><a href="{ZL:GetInfoUrl(25)/}">联系公司</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+<div class="footer_bottom marginbot">
+<div class="container">{$Copyright/}</div>
+</div>
+<div class=""></div>
+<div class="navbar-fixed-bottom home_jidi">
+<div class="container">
+<a>基地展示：</a>
+<a href="{ZL:GetInfoUrl(52)/}" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-star"></span>万年基地</a>
+<a href="{ZL:GetInfoUrl(53)/}" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-leaf"></span>太阳基地</a>
+<a href="{ZL:GetInfoUrl(54)/}" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-tree-conifer"></span>丰城基地</a>
+<a href="{ZL:GetInfoUrl(55)/}" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-grain"></span>牛场基地</a>
+<a href="{ZL:GetInfoUrl(56)/}" class="btn btn-sm btn-success"><span class="glyphicon glyphicon glyphicon-cd"></span>杨桥基地</a>
+<a href="{ZL:GetInfoUrl(57)/}" class="btn btn-sm btn-success"><span class="glyphicon glyphicon glyphicon-tree-deciduous"></span>丁家基地</a>
+</div>
+</div>
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('home_nav'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+     if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+    IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+ //]]>
+
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement("style");
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      "@-ms-viewport{width:auto!important}"
+    )
+  );
+  document.getElementsByTagName("head")[0].
+    appendChild(msViewportStyle);
+}
+
+$(".bottom-close").click(function(){
+	$(".bottom-contrainer").addClass("bottom-hide");
+	$(".bottom-collspan").removeClass("collspan-hide");
+})
+$(".collspan").click(function(){
+	$(".bottom-contrainer").removeClass("bottom-hide");
+	$(".bottom-collspan").addClass("collspan-hide");	
+})
+</script>
